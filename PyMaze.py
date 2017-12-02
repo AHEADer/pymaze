@@ -7,7 +7,7 @@ from renderMaze import Maze
 class Game:
 
     def __init__(self, diff, dim, path):
-        self.size = (800,600)
+        self.size = (1200,900)
         self.screen = pygame.display.set_mode(self.size)
         pygame.display.set_caption('Maze Demo')
 
@@ -206,7 +206,7 @@ if __name__ == '__main__':
     pygame.init()
     args = argv[1:]
     diff = 0
-    dim = '30x40'
+    dim = '60x80'
     path = 1
     for arg in args:
         if '--diff' in arg:
